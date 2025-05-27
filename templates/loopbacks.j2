@@ -1,0 +1,4 @@
+{% for loopback in loopbacks %}
+interface Loopback{{ loopback.number }}
+ ip address {{ loopback.ip_address }} {{ loopback.subnet_mask }}
+{% endfor %} 
