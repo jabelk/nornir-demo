@@ -1,8 +1,4 @@
 #!/usr/bin/env python3
-"""
-Nornir Jinja2 + Netmiko Demo – Cisco Live 2025
-Render and apply a loopback config using Jinja2 and Netmiko.
-"""
 
 from nornir import InitNornir
 from nornir_utils.plugins.functions import print_result

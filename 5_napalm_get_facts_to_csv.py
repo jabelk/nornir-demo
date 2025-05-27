@@ -1,9 +1,4 @@
 #!/usr/bin/env python3
-"""
-Nornir NAPALM Demo - Cisco Live 2025
-This script demonstrates how to use Nornir with NAPALM to collect device facts and export them to CSV.
-It shows how Python makes it easy to process and use network data, compared to static YAML outputs.
-"""
 
 import csv
 from nornir import InitNornir

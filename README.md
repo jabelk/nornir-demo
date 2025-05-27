@@ -1,0 +1,70 @@
+# Nornir Demo Scripts
+
+This repository contains a series of demo scripts showcasing Nornir's capabilities for network automation. 
+
+## Demo Scripts
+
+### 1. Hello World (`1_hello_world.py`)
+- Basic Nornir setup and initialization
+- Inventory access and host information
+- Simple task execution
+- Result handling and output formatting
+
+### 2. Netmiko Show Command (`2_netmiko_show_command.py`)
+- Device connection using Netmiko
+- Command execution on network devices
+- Output processing
+- Basic error handling
+
+### 3. Task Chaining (`3_task_chaining.py`)
+- Running multiple tasks in sequence
+- Data passing between tasks
+- Task result aggregation
+- Programmatic task control
+
+### 4. Render Config with Jinja2 (`4_render_config_jinja2.py`)
+- Template-based configuration
+- Jinja2 template rendering
+- Configuration application
+- State verification
+
+### 5. NAPALM Get Facts to CSV (`5_napalm_get_facts_to_csv.py`)
+- Multi-vendor support with NAPALM
+- Data collection and processing
+- CSV output generation
+- Structured data handling
+
+### 6. Troubleshooting (`6_troubleshoot_failed_task.py`)
+- Error handling and debugging
+- Failed task inspection
+- Logging configuration
+- Recovery procedures
+
+## Key Nornir Features Demonstrated
+
+- **Inventory Management**: YAML-based inventory with groups and variables
+- **Task Execution**: Parallel and sequential task execution
+- **Plugin System**: Integration with Netmiko and NAPALM
+- **Template Support**: Jinja2 templating for configurations
+- **Error Handling**: Comprehensive error handling and debugging
+- **Data Processing**: Collection, transformation, and output
+- **Multi-vendor Support**: Working with different network platforms
+
+## Requirements
+
+- Python 3.8+
+- Nornir and its plugins (see `requirements.txt`)
+- Network device access (DevNet sandbox or similar)
+
+## Usage
+
+Each script can be run independently:
+```bash
+python <script_name>.py
+```
+
+## Additional Resources
+
+- [Nornir Documentation](https://nornir.readthedocs.io/)
+- [Netmiko Documentation](https://github.com/ktbyers/netmiko)
+- [NAPALM Documentation](https://napalm.readthedocs.io/) 
