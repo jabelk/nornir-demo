@@ -12,12 +12,13 @@ result = nr.run(
 # Inspect results
 for host, multi_result in result.items():
     task_result = multi_result[0]  # Nornir tasks always return a list per host
+    output = task_result.result.strip()
+
     print(f"\n{host}:")
 
-    if task_result.failed:
+    if task_result.failed or "% Invalid input" in output:
         print("[!] Task FAILED")
-        print("Exception:", task_result.exception)
-        print("Output:", task_result.result)
+        print("Output:", output)
     else:
         print("[✓] Task SUCCEEDED")
-        print("Output:", task_result.result)
+        print("Output:", output)
