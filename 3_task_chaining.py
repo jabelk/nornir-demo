@@ -32,7 +32,7 @@ def set_loopback_description(task):
 def config_chain(task):
     task.run(task=show_hostname)
     task.run(task=set_loopback_description)
-    return None  # Optionally return a summary result if needed
+    return None  
 
 
 def main():
