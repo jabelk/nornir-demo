@@ -1,6 +1,6 @@
 # Nornir Demo Scripts
 
-This repository contains a series of demo scripts showcasing Nornir's capabilities for network automation. 
+This repository contains a series of demo scripts showcasing Nornir's capabilities for network automation. Network device is from [Cisco DevNet Sandbox](https://devnetsandbox.cisco.com/DevNet/catalog/IOS%20XE%20on%20Cat8kv_ios-xe-cat-8kv).
 
 ## Demo Scripts
 
