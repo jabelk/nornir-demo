@@ -4,9 +4,20 @@ ios_device:
   groups:
     - ios
   data:
-    site: "lab1"
-    role: "access"
+    # site: "lab1"
+    # role: "access"
+    mtg_card: "Omniscience" 
     loopbacks:
       - number: 100
-        ip: 10.0.0.1
+        ip: 10.2.2.4
         mask: 255.255.255.255
+
+nexus_device:
+  hostname: 10.10.20.40
+  groups: [nexus]
+  username: admin
+  password: RG!_Yw200
+  data:
+    site: dc1
+    role: core
+    mtg_card: "Ethernet Giant"   # This one will fail

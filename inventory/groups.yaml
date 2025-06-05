@@ -1,3 +1,14 @@
 ---
 ios:
-  platform: ios 
+  platform: ios
+  connection_options:
+    netmiko:
+      extras:
+        device_type: cisco_ios
+
+nexus:
+  platform: nxos
+  connection_options:
+    netmiko:
+      extras:
+        device_type: cisco_nxos

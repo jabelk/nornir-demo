@@ -34,12 +34,7 @@ def config_chain(task):
     task.run(task=set_loopback_description)
     return None  
 
-
-def main():
-    nr = InitNornir(config_file="config.yaml")
-    result = nr.run(task=config_chain)
-    print_result(result)
-
-
-if __name__ == "__main__":
-    main()
+nr = InitNornir(config_file="config.yaml")
+nr = nr.filter(platform="ios")
+result = nr.run(task=config_chain)
+print_result(result)

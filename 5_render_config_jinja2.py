@@ -22,12 +22,10 @@ def render_and_apply_config(task):
         config_commands=config_lines
     )
 
-def main():
-    nr = InitNornir(config_file="config.yaml")
 
-    # Run render + apply logic
-    result = nr.run(task=render_and_apply_config)
-    print_result(result)
+nr = InitNornir(config_file="config.yaml")
+nr = nr.filter(platform="ios")
+# Run render + apply logic
+result = nr.run(task=render_and_apply_config)
+print_result(result)
 
-if __name__ == "__main__":
-    main()

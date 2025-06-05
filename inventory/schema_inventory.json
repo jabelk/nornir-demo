@@ -1,0 +1,20 @@
+{
+    "name": "str",
+    "connection_options": {
+        "$connection_type": {
+            "extras": {
+                "$key": "$value"},
+            "hostname": "str",
+            "port": "int",
+            "username": "str",
+            "password": "str",
+            "platform": "str"}},
+    "groups": ["$group_name"],
+    "data": {
+        "$key": "$value"},
+    "hostname": "str",
+    "port": "int",
+    "username": "str",
+    "password": "str",
+    "platform": "str"
+}
