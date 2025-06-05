@@ -6,39 +6,44 @@ This repository contains a series of demo scripts showcasing Nornir's capabiliti
 
 ### 1. Hello World (`1_hello_world.py`)
 - Basic Nornir setup and initialization
-- Inventory access and host information
-- Simple task execution
-- Result handling and output formatting
+- Simple task execution to greet hosts
+- Basic host information display
 
-### 2. Netmiko Show Command (`2_netmiko_show_command.py`)
+### 2. Results Object (`2_results_object.py`)
+- Working with Nornir's Result objects
+- Task result handling and inspection
+- Error handling and exception management
+- Custom task result formatting
+
+### 3. Netmiko Show Command (`3_netmiko_show_command.py`)
 - Device connection using Netmiko
 - Command execution on network devices
 - Output processing
 - Basic error handling
 
-### 3. Task Chaining (`3_task_chaining.py`)
+### 4. Task Chaining (`4_task_chaining.py`)
 - Running multiple tasks in sequence
 - Data passing between tasks
 - Task result aggregation
 - Programmatic task control
 
-### 4. Render Config with Jinja2 (`4_render_config_jinja2.py`)
+### 5. Render Config with Jinja2 (`5_render_config_jinja2.py`)
 - Template-based configuration
 - Jinja2 template rendering
 - Configuration application
-- State verification
+- Dynamic config generation
 
-### 5. NAPALM Get Facts to CSV (`5_napalm_get_facts_to_csv.py`)
+### 6. NAPALM Get Facts to CSV (`6_napalm_get_facts_to_csv.py`)
 - Multi-vendor support with NAPALM
 - Data collection and processing
 - CSV output generation
 - Structured data handling
 
-### 6. Troubleshooting (`6_troubleshoot_failed_task.py`)
+### 7. Troubleshooting (`7_troubleshoot_failed_task.py`)
 - Error handling and debugging
 - Failed task inspection
-- Logging configuration
-- Recovery procedures
+- API integration example
+- Exception handling patterns
 
 ## Key Nornir Features Demonstrated
 
