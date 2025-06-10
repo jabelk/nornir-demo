@@ -4,7 +4,6 @@ from nornir import InitNornir
 from nornir_utils.plugins.functions import print_result
 from nornir_jinja2.plugins.tasks import template_file
 from nornir_netmiko.tasks import netmiko_send_config
-import json
 
 def render_and_apply_config(task):
     # Render template with loopback data

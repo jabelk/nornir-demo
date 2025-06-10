@@ -1,5 +1,5 @@
 from nornir import InitNornir
-from nornir.core.task import Task, Result
+from nornir.core.task import Result
 from nornir_utils.plugins.functions import print_result
 
 def format_site_label(task):
